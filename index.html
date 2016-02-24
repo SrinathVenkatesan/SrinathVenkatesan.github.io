@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table {
+    position: relative;
+
+    left: 15%;
+	width: 1000px;
+	height:400px;
+    background-color:#eeeeee;
+    font-family:Georgia;
+	border:1px solid black;
+    
+    padding:5px; 
+}
+li{
+font-size: 20px;
+}
+p{
+font-size: 15px;
+font-family:Georgia;
+}
+button
+{
+height: 50px;
+width: 200px;
+margin-left:550px;
+margin-bottom:1000px;
+font-family: vedana;
+font-size:14px;
+    font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Recommendation System & Indexing</h1>
+<table valign="top">
+
+<tr>
+<td>
+<ul>
+  <li>Data Crawling using jsoup</li>
+  <p>Contents of Java Programming Wikibooks was crawled para wise to provide recommendations based on the Query String.</p>
+  <p>Oracle The Java Tutorials web page was crawled based on the tag ("#page-content") to provide recommendations.</p>
+  <li>Lucene Indexing</li>
+  <p>The web data crawled is stored as a seperate text file and used to build the Term Document for the Lucene Recommendation engine.
+  <p>Query provided by the user is indexed using lucene and top 10 paragraphs recommended by lucene based on the score are displayed. </p>
+  <li>User Interface</li>
+  <p>The application is built using HTML and javascript.The lucene recommendation engine runs offline and the provides the results</p>
+  <p>The 10 queries used in the project can be selected using radio buttons.The Recommendations for the selected post are displayed below the query</p>
+</ul>
+</td>
+</tr>
+</table>
+<br>
+<button onclick="location.href = 'recommender.html';">Click here to Search !!</button>
+
+</body>
+</html>
